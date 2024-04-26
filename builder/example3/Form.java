@@ -12,6 +12,25 @@ public class Form {
     private final FormCategory category;
     private final String prefix;
 
+    public int getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public FormCategory getCategory() {
+        return category;
+    }
+
+    public String getPrefix() {
+        return prefix;
+    }
 
     public static class Builder {
         private final int id;

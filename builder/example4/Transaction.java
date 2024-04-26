@@ -13,6 +13,22 @@ public class Transaction {
     private final double amount;
     private final Instant timestamp;
 
+    public String getSender() {
+        return sender;
+    }
+
+    public String getRecipient() {
+        return recipient;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public Instant getTimestamp() {
+        return timestamp;
+    }
+
     private Transaction(Builder builder) {
         this.sender = builder.sender;
         this.recipient = builder.recipient;
